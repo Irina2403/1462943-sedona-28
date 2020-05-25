@@ -23,13 +23,7 @@
       <div class="welcome">
         
         <img src="img/intro-welcome.svg" width="457" height="351" alt="Welcome to the gorgeous">
-        
-
       </div>
-      
-      <!--<p><strong>SEDONA</strong></p>
-        <blockquote>"Because the Grand Canyon sucks"</blockquote>
-           -->
       
       </section>
 
@@ -49,12 +43,45 @@
         <h4>ЗАИНТЕРЕСОВАЛИСЬ?</h4>
         <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
         И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
-        <figure>
+        <img src="img/image opt.jpg" width="21" height="23" alt="календарик  иконка">
+
+
+        
+
+          <form action="hhtps://echo.htmlacademy.ru" method="post">
+          
           <h3> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3>
           <!--Здесь будет окно поиска гостиниц
           пока форм нет, только иконка календарика-->
+
+          <div class="date_arrive" >
+          <label for="dateone">ДАТА ЗАЕЗДА:</label>
+          <input type="text" name="datearrive" id="dateone" placeholder="24 апреля 2017 года" required>
           <img src="img/calendar.svg" width="21" height="23" alt="календарик  иконка">
-        </figure>
+          </div>
+
+          <div class="date_depart">
+          <label for="datetwo">ДАТА ВЫЕЗДА:</label>
+          <input type="text" name="datedepart" id="datetwo" placeholder="4 июля 2017 года" required>
+          <img src="img/calendar.svg" width="21" height="23" alt="календарик  иконка">
+          </div>
+
+          <div class="adultq-ty">
+           <label for="adult">ВЗРОСЛЫЕ</label>
+          <input type="text" name="adult" id="adult" placeholder="-  2  +">
+          </div>
+
+          <div class="childq-ty">
+          <label for="child">ДЕТИ</label>
+          <input type="text" name="child" id="child" placeholder="-  0  +">
+          </div>
+          
+          <button type="submit" name="find" id="find">НАЙТИ</button>
+            
+
+          
+          </form>
+        
         
       </section>
 
