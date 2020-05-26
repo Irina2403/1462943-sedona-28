@@ -1,7 +1,10 @@
 Папка для стилевых файлов.
-.visually-hiden{ 
+.visually-hidden{ 
     position: absolut;
 
+}
+.social {
+    background: blue; 
 }
 --
 
