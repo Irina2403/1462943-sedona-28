@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="/Users/Irina/Downloads/sedona/fonts/web">
+    <link href="normalize.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
 
@@ -25,18 +28,19 @@
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <h3>ИНФРАСТРУКТУРА:</h3>
-            <ul>
+            <ul class="menu-ability">
               <li>
-                <label for="ability-pool">БАССЕЙН</label>
                 <input type="checkbox" name="pool" id="ability-pool" checked>
+                <label for="ability-pool">БАССЕЙН</label>
               </li>
               <li>
-                <label for="ability-parking">ПАРКОВКА </label>
                 <input type="checkbox" name="parking" id="ability-parking">
+                <label for="ability-parking">ПАРКОВКА </label>
               </li>
               <li>
-                <label for="ability-wifi">WI-FI</label>
                 <input type="checkbox" name="wifi" id="ability-wifi">
+                <label for="ability-wifi">WI-FI</label>
+                
               </li>
             </ul>
           </fieldset> 
@@ -45,34 +49,35 @@
            <h3>ТИП ЖИЛЬЯ:</h3>
             <ul>
               <li>
-                <label for="accomodation-hotel">ГОСТИНИЦА</label>
                 <input type="checkbox" name="hotel" id="accomodation-hotel" checked>
+                <label for="accomodation-hotel">ГОСТИНИЦА</label>
+                
               </li>
               <li>
-                <label for="accomodation-motel">МОТЕЛЬ</label>
                 <input type="checkbox" name="motel" id="accomodation-motel" checked>
+                <label for="accomodation-motel">МОТЕЛЬ</label>
               </li>
               <li>
-                <label for="accomodation-apartments">АПАРТАМЕНТЫ</label>
                 <input type="checkbox" name="apartments" id="accomodation-apartments" checked>
+                <label for="accomodation-apartments">АПАРТАМЕНТЫ</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset> 
             <div class="cost-per-day">
-              <label for="price">СТОИМОСТЬ В СУТКИ(Р)</label>
-            <input type="number" name="price" id="price" min="0" max="3000" aria-label="Стоимость в сутки">
-            <input type="range" min="0" max="3000">
-            </div>
+              <legend>СТОИМОСТЬ В СУТКИ(Р)</legend>
+            <input type="number" name="price-low" id="price-low" min="0" placeholder="0"  aria-label="Минимальная стоимость в сутки">
+            <input type="number" name="price-high" id="price-hight" max="3000" placeholder="3000" aria-label="Максимальная стоимость в сутки">
+            <div class="circle-1"></div>
+            <div class="straight"></div>
+            <div class="circle-2"></div>
+            
             <button type="submit"area-label="Показать результаты" >ПОКАЗАТЬ</button>
-
+            </div>
           </fieldset>
-          
         </form> 
       </section>
- 
-
       <section>
         <h1 class="vissually-hidden">Стоимость в сутки</h1> <!--Заголовок скрыт-->
 
@@ -145,7 +150,7 @@
       </section>
       <section>
         <h2 class="vissually-hidden">Мы в соцсетях</h2><!--Заголовок скрыт-->
-        <ul> 
+        <ul class="social-list"> 
         <li><a href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter"></a></li>
         <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
         <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>

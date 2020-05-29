@@ -3,9 +3,7 @@
     position: absolut;
 
 }
-.social {
-    background: blue; 
-}
+
 --
 
 Пример структуры файлов:
@@ -13,3 +11,60 @@
 css/
 | - style.css
 | - [другие *.css файлы]
+
+
+:root {
+  --basic-light: #888888;
+  --basic-white: #ffffff;
+  --basic-black: #000000;
+  --basic-blue: #81B3D2;
+  --first-blue: #669EC0;
+  --second-blue: #5496BD;
+  --basic-brown: #766357;
+  --first-brown: #604E43;
+  --second-brown: #503E33;
+ 
+  --special: #663d15;
+}
+
+ body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-light);
+  background-image: url("../img/background photo opt.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* main navigation */
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+.social-list a:hover,
+.social-list a:focus,
+ {
+background-color: var(--first-blue);
+}
