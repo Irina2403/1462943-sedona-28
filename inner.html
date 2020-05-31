@@ -8,20 +8,21 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-
     <header>
-      <a><img src="img/logo.png" width="138" height="70" alt="Логотип SEDONA"></a>
-      <nav>
+      
+      <nav class="main-navigation">
         <ul>
           <li><a href="information_sedona.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="fotoandvideo-sedona.html">ФОТО И ВИДЕО</a></li>
+          <li><a class="main-header-logo">
+      <img src="img/logo.png" width="138" height="70" alt="Логотип SEDONA" aria-label="логотип Седона">
+      </a></li>
           <li><a href="Mapstate-sedona.html">КАРТА ШТАТА</a></li>
           <li><a href="inner.html">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
 
     </header>
-
 
     <main>
       <section>
@@ -67,11 +68,11 @@
           <fieldset> 
             <div class="cost-per-day">
               <legend>СТОИМОСТЬ В СУТКИ(Р)</legend>
-            <input type="number" name="price-low" id="price-low" min="0" placeholder="0"  aria-label="Минимальная стоимость в сутки">
-            <input type="number" name="price-high" id="price-hight" max="3000" placeholder="3000" aria-label="Максимальная стоимость в сутки">
-            <div class="circle-1"></div>
+            <input type="text" name="price-low" id="price-low" min="0" placeholder="0"  aria-label="Минимальная стоимость в сутки">
+            <input type="text" name="price-high" id="price-hight" max="3000" placeholder="3000" aria-label="Максимальная стоимость в сутки">
+            <div class="circle-1" area-label="значение минимальной стоимости проживания"></div>
             <div class="straight"></div>
-            <div class="circle-2"></div>
+            <div class="circle-2" area-label="значение максимальной стоимости проживания"></div>
             
             <button type="submit"area-label="Показать результаты" >ПОКАЗАТЬ</button>
             </div>
@@ -79,7 +80,24 @@
         </form> 
       </section>
       <section>
-        <h1 class="vissually-hidden">Стоимость в сутки</h1> <!--Заголовок скрыт-->
+        <h1 class="vissually-hidden">строка поиска</h1> <!--Заголовок скрыт-->
+       <div class="search menu" >
+         <p>НАЙДЕНО: 3</p>
+         <ul class="sorting">
+           <li>ПО ЦЕНЕ</li> 
+           <li>ПО ТИПУ</li>
+           <li>ПО РЕЙТИНГУ</li> 
+         </ul>
+         <form>
+           <input type="button" name="стрелка вверх" aria-label="стрелка вверх">
+           <img src="img/icon-up-dir.svg" width="11" height="10">
+           <input type="button" name="стрелка вниз" aria-label="стрелка вниз">
+           <img src="img/icon-down-dir.svg" width="11" height="10">
+         </form>
+       </div>
+      </section>
+      <section>
+        <h2 class="vissually-hidden">Результаты поиска размещения</h2> <!--Заголовок скрыт-->
 
        <figure>
          
@@ -151,9 +169,9 @@
       <section>
         <h2 class="vissually-hidden">Мы в соцсетях</h2><!--Заголовок скрыт-->
         <ul class="social-list"> 
-        <li><a href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
-        <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
+        <li><a href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter" aria-label="Аккаунт SEDONA в Twitter"></a></li>
+        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"aria-label="Страница SEDONA в Facebook"></a></li>
+        <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube" aria-label="Канал SEDONA в Youtube"></a></li>
         </ul>
       </section>
       <p>

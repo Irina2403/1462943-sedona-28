@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="/Users/Irina/Downloads/sedona/fonts/web">
+    <link rel="stylesheet" href="./CSS/style.css">
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <a><img src="img/logo.png" width="138" height="70" alt="Логотип SEDONA"></a>
+      
       <nav class="main-navigation">
-        <ul class="site-navigation">
+        <ul>
           <li><a href="information_sedona.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="fotoandvideo-sedona.html">ФОТО И ВИДЕО</a></li>
+          <a class="main-header-logo">
+      <img src="img/logo.png" width="138" height="70" alt="Логотип SEDONA" aria-label="логотип Седона">
+      </a>
           <li><a href="Mapstate-sedona.html">КАРТА ШТАТА</a></li>
           <li><a href="inner.html">ГОСТИНИЦЫ</a></li>
         </ul>
@@ -37,17 +40,17 @@
 
       <section>
         <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
-         <ul>
-           <li> 
-
+         <ul class="reasons-list">
+           <li class="reason-item"> 
+             <div>
             <p><h3>НАСТОЯЩИЙ ГОРОДОК</h3></p>
             <p>-№ 1-</p>
             <p>СЕДОНА- НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ<br>
             ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
           <img src="img/image opt.jpg" width="800" height="256" alt="фото домика">
-          
+            </div>
 
-           
+            <div>
           <img src="img/icon-1.svg " width="75" height="72" alt="иконка домика">
           <h3>ЖИЛЬЁ</h3>
           <p>РЕКОМЕНДУЕМ ПОЖИТЬ В НАСТОЯЩЕМ<br> 
@@ -63,57 +66,67 @@
           <p>НЕ ТОЛЬКО КИТАЙСКОГО, НО И МЕСТНОГО<br>
           ПРОИЗВОДСТВА</p>
           </li>
+            </div>
 
-          <li>
+            <div>
+          <li class="reason-item">
             <img src="img/image-canyon-opt.jpg" width="800" height="256" alt="фото каньона">
             <p><h3>ТАМ ЕСТЬ<br> МОСТ ДЬЯВОЛА</h3></p>
             <p>-№ 2-</p>
             <p>ДА, ПО НЕМУ МОЖНО ПРОЙТИ! ЕСЛИ КОНЕЧНО<br>
             ВЫ ОСМЕЛИТЕСЬ</p>
           </li>
+            </div>
 
-          <li>
+            <div>
+          <li class="reason-item">
             <p><h3>НЕБОЛЬШАЯ ПЛОЩАДЬ</h3></p>
             <p>-№ 3-</p>
             <p>ВСЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ<br>
             НАХОДЯТСЯ ОЧЕНЬ БЛИЗКО</p>
 
           </li>
-          <li>
+          <li class="reason-item">
             <p><h3>КРАСИВАЯ ДОРОГА</h3></p>
             <p>-№ 4-</p>
             <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА СОВСЕМ<br>
             НЕ СКУЧНО</p>
 
           </li>
-          <li>
+          <li class="reason-item">
             <p><h3>МАЛО ТУРИСТОВ</h3></p>
             <p>-№ 5-</p>
             <p>БОЛЬШИНСТВО ЕДЕТ В ГРАНД КАНЬОН<br>
             И ТОЛПИТСЯ ТАМ</p>
 
           </li>
+            </div>
            </ul> 
       </section>
 
       <section>
-        <h4>ЗАИНТЕРЕСОВАЛИСЬ?</h4>
+        <div class="best variant">
+        <h4 >ЗАИНТЕРЕСОВАЛИСЬ?</h4>
         <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
         И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
+        </div>
+          
           <form action="hhtps://echo.htmlacademy.ru" method="post">
             <legend><h3> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3></legend>
           <fieldset>
             <div class="date_arrive" >
           <label for="dateone">ДАТА ЗАЕЗДА:</label>
           <input type="text" name="datearrive" id="dateone" placeholder="24 апреля 2017 года" required>
-          <img src="img/calendar.svg" width="21" height="23" alt="календарик  иконка">
+          <img src="img/calendar.svg" width="21" height="23" alt="календарик  иконка" aria-label="выбор даты заезда на календаре">
+        </div>
             </div>
           </fieldset>
           <fieldset>
             <div class="date_depart">
           <label for="datetwo">ДАТА ВЫЕЗДА:</label>
           <input type="text" name="datedepart" id="datetwo" placeholder="4 июля 2017 года" required>
-          <img src="img/calendar.svg" width="21" height="23" alt="календарик  иконка">
+          <button type="button"
+          <img src="img/calendar.svg" width="21" height="23" alt="календарик  иконка" aria-label="выбор даты выезда на календаре">
             </div>
           </fieldset>
 
@@ -121,16 +134,16 @@
           <div class="people">
             <div class="adult-quantity">
           <label for="adult">ВЗРОСЛЫЕ</label>
-          <button type="submit" value="уменьшить">-</button>
+          <button type="submit" value="уменьшить" aria-label="Уменьшить число взрослых гостей">-</button>
           <input type="text" name="adult" id="adult" placeholder="2" readonly>
-          <button type="submit" value="увеличить">+</button>
+          <button type="submit" value="увеличить" aria-label="Увеличить число взрослых гостей">+</button>
             </div>
 
             <div class="child-quantity">
           <label for="child">ДЕТИ</label>
-          <button type="submit" value="уменьшить">-</button>
+          <button type="submit" value="уменьшить" aria-label="Уменьшить число гостей до 12 лет">-</button>
           <input type="text" name="child" id="child" placeholder="0" readonly>
-          <button type="submit" value="увеличить">+</button>
+          <button type="submit" value="увеличить" aria-label="Увеличить число гостей до 12 лет" >+</button>
             </div>
           </div>
           </fieldset>
@@ -149,9 +162,9 @@
       <section class="social-list">
         <h2 class="vissual-hidden">Мы в соцсетях</h2><!--Заголовок скрыт-->
         <ul>
-        <li><a href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"></a></li>
-        <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a></li>
+        <li><a href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter" aria-label="Аккаунт SEDONA в Twitter"></a></li>
+        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook" aria-label="Страница SEDONA в Facebook"></a></li>
+        <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube" aria-label="Канал SEDONA в Youtube"></a></li>
         </ul>
       </section>
       <p>
