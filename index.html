@@ -9,14 +9,15 @@
   </head>
   <body>
     <header>
-      
-      <nav class="main-navigation">
-        <ul>
-          <li><a href="information_sedona.html">ИНФОРМАЦИЯ</a></li>
-          <li><a href="fotoandvideo-sedona.html">ФОТО И ВИДЕО</a></li>
-          <a class="main-header-logo">
+       <nav class="main-navigation">
+      <a class="main-header-logo">
       <img src="img/logo.png" width="138" height="70" alt="Логотип SEDONA" aria-label="логотип Седона">
       </a>
+     
+        <ul class="site-navigation">
+          <li><a href="information_sedona.html">ИНФОРМАЦИЯ</a></li>
+          <li><a href="fotoandvideo-sedona.html">ФОТО И ВИДЕО</a></li>
+          
           <li><a href="Mapstate-sedona.html">КАРТА ШТАТА</a></li>
           <li><a href="inner.html">ГОСТИНИЦЫ</a></li>
         </ul>
@@ -29,17 +30,20 @@
       <div class="welcome">
         
         <img src="img/intro-welcome.svg" width="457" height="351" alt="Welcome to the gorgeous">
+        <img src="img/white-tooth.png" width="1200" height="57" alt="белые зубы МАСКА">
       </div>
       </section>
 
       <section>
-        <img src="img/white-tooth.png" width="1200" height="272" alt="белые зубы МАСКА">
-        <h2>СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
+        <!--<img src="img/white-tooth.png" width="1200" height="57" alt="белые зубы МАСКА">-->
+        <h2 class="attention">СЕДОНА - НЕБОЛЬШОЙ ГОРОДОК В АРИЗОНЕ,<br>
         ЗАСЛУЖИВАЮЩИЙ БОЛЬШЕГО!</h2>
+        
+
       </section>
 
       <section>
-        <p>РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
+        <p class="reasons-header">РАССМОТРИМ 5 ПРИЧИН, ПО КОТОРЫМ СЕДОНА КРУЧЕ, ЧЕМ ГРАНД КАНЬОН!</p>
          <ul class="reasons-list">
            <li class="reason-item"> 
              <div>
@@ -105,28 +109,31 @@
       </section>
 
       <section>
-        <div class="best variant">
+        <div class="best-variant">
         <h4 >ЗАИНТЕРЕСОВАЛИСЬ?</h4>
         <p>УКАЖИТЕ ПРЕДПОЛАГАЕМЫЕ ДАТЫ ПОЕЗДКИ,<br>
         И МЫ ПОКАЖЕМ ВАМ ЛУЧШИЕ ПРЕДЛОЖЕНИЯ ГОСТИНИЦ В СЕДОНЕ</p>
         </div>
           
-          <form action="hhtps://echo.htmlacademy.ru" method="post">
+          <form class="search-form" action="hhtps://echo.htmlacademy.ru" method="post">
             <legend><h3> ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h3></legend>
           <fieldset>
             <div class="date_arrive" >
           <label for="dateone">ДАТА ЗАЕЗДА:</label>
           <input type="text" name="datearrive" id="dateone" placeholder="24 апреля 2017 года" required>
+          <button type="button" tabindex="0">
           <img src="img/calendar.svg" width="21" height="23" alt="календарик  иконка" aria-label="выбор даты заезда на календаре">
-        </div>
+          </button>
             </div>
           </fieldset>
           <fieldset>
             <div class="date_depart">
           <label for="datetwo">ДАТА ВЫЕЗДА:</label>
           <input type="text" name="datedepart" id="datetwo" placeholder="4 июля 2017 года" required>
-          <button type="button"
+
+          <button type="button" tabindex="0">
           <img src="img/calendar.svg" width="21" height="23" alt="календарик  иконка" aria-label="выбор даты выезда на календаре">
+          </button>      
             </div>
           </fieldset>
 
@@ -147,33 +154,37 @@
             </div>
           </div>
           </fieldset>
-          <fieldset>
+          <fieldset class="find" >
           <button type="submit" name="find" id="find">НАЙТИ</button>
           </fieldset>
           </form>
       </section>
+      <section>
+        <div class="map-sidona">
+      <img src="img/map.png" width="1199" height="594" alt="Map of SEDONA">
+        </div>
+      </section>
 
     </main>
-    <footer>
+
+    <footer class="main-footer">
       <section>
-        <span>#VISITSEDONA</span><br>
+        <span class="visit">#VISITSEDONA</span><br>
         <a href="tel:+7(495) 666-02-66" area-label="Телефон">ТЕЛ: +7(495) 666-02-66</a>
       </section>
-      <section class="social-list">
-        <h2 class="vissual-hidden">Мы в соцсетях</h2><!--Заголовок скрыт-->
-        <ul>
-        <li><a href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter" aria-label="Аккаунт SEDONA в Twitter"></a></li>
-        <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook" aria-label="Страница SEDONA в Facebook"></a></li>
-        <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube" aria-label="Канал SEDONA в Youtube"></a></li>
+      <section >
+        <h2 class="visually-hidden">Мы в соцсетях</h2><!--Заголовок скрыт-->
+        <ul class="social-list">
+        <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter" aria-label="Аккаунт SEDONA в Twitter"></a></li>
+        <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook" aria-label="Страница SEDONA в Facebook"></a></li>
+        <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube" aria-label="Канал SEDONA в Youtube"></a></li>
         </ul>
       </section>
       <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" area-label="Ссылка на HTML ACADEMY"> 
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" area-label="Ссылка на HTML ACADEMY"> 
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML ACADEMY">
         </a>
       </p>
-        
     </footer>
-    
   </body>
 </html>

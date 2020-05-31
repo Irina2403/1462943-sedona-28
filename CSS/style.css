@@ -9,6 +9,7 @@ css/
 
 :root {
   --basic-light: #888888;
+  --basic-background:#F2F2F2;
   --basic-white: #ffffff;
   --basic-black: #000000;
   --basic-blue: #81B3D2;
@@ -32,7 +33,7 @@ css/
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-light);
-  background-image: url("../img/background photo opt.jpg");
+  /*background-image: url("../img/background photo opt.jpg");*/
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -48,7 +49,6 @@ img {
 /* main navigation */
 
 .main-navigation {
-  list-style: none;
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
@@ -56,32 +56,193 @@ img {
   
 }
 
+.site-navigation a {
+list-style: none; 
+color: var(--basic-black);
+position: absolute;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: var(--first-blue);
+}
+.site-navigation a:active {
+  color: var(--second-blue);
+}
+
 .main-header-logo {
   text-align: center; 
 }
-.social-list a:hover,
-.social-list a:focus,
- {
-background-color: var(--first-blue);
+.visually-hidden { 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip:rect(0 0 0 0);
+  overflow: hidden;
+
 }
+.welcome {
+  text-align: center;
+  background-image: url("../img/background photo opt.jpg");
+  background-position: top center;
+}
+.attention {
+  text-align: center;
+  background-color: var(--basic-white);
+  background-position: top center;
+  width: 1200px;
+  height: 216px;
+}
+/* 5 ПРИЧИН */
+.reasons-header {
+  font: inherit;
+  font-size: 14px;
+  text-align: center;
+  line-height: 26 px;
+  background-color: var(--basic-white);
+  
+
+}
+
 .reasons-list {
+  font: inherit;
   list-style: none;
 }
 .reason-item {
+  font: inherit;
   text-align: center;
 }
 .reason-item h3 {
    font-size: 21px;
    line-height: 21px;
 }
-.best variant{
+.best-variant {
+  font:inherit;
   text-align: center;
 }
+/*Форма Поиска*/
+.search-form {
+  font:inherit;
+  text-align: center;
+  background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  width: 568px;
+  height: 395px;
+}
+.search-form legend {
+  font:inherit;
+  background-color: var(--basic-brown); 
+  color: var(--basic-white);
+}
+.date-arrive {
+  font: inherit;
+  background-color: var(--basic-background);
+  widows: 346px; 
+  height: 38px ;
+}
+.date-depart {
+  font: inherit;
+  background-color: var(--basic-background);
+  widows: 346px; 
+  height: 38px ;
+  border-color: var(--basic-background);
+}
+.find {
+  font:inherit;
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+}
+.map-sidona {
+  text-align: center;
+}
+/* ЕСЛИ ПОНАДОБИТЬСЯ КНОПКА
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-black);
+  background-color: var(--basic-white) ;
+  text-transform: uppercase;
+  border-color: var(--basic-background);
+} */
 
+/* Футер */
+.main-footer {
+  background-color: var(--basic-white) ;
+  color: var(--basic-black);
+  width: 1200px;
+  height: 395px; 
+}
+.main-footer a{
+  color: var(--basic-black);
+}
+.visit {
+color:inherit;
+}
+.footer-logo {
+text-align: right;
+color: var(--basic-black);
+}
+.footer-logo:hover,
+.footer-logo:focus {
+text-align: right;
+color: var(--basic-blue);
+}
+.footer-logo:focus {
+text-align: right;
+color: var(--basic-background);
+}
+
+
+
+/* СОЦ СЕТИ*/
 .social-list {
   list-style: none;
+  text-align: center; 
 }
-.visually-hidden { 
-  position: absolute;
+ .social-button {
+   background-color: var(--basic-blue);
+   width: 46;
+   height: 48;
+ }
+ 
+.social-button  a:hover,
+.social-button  a:focus,
+ {
+background-color: var(--first-blue);
+}
+.social-button a:active {
+background-color: var(--second-blue);
+}  
+/* inner.html */
 
+.accomodation {
+  font: inherit;
+  background-color: var(--basic-white);
+}
+.accomodation-list {
+  font: inherit;
+  list-style: none;
+  background-color: var(--basic-white);
+}
+
+.sorting {
+  font: inherit;
+  list-style: none;
+  
+}
+.sorting li:first-child a{
+  color: var(--basic-blue);
+}
+.sorting li:nth-child(2) a{
+  text-decoration: underline;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  color: var(--basic-black);
+}
+.sorting li:nth-child(3) a{
+  text-decoration: underline;
+  color: var(--basic-black);
 }
