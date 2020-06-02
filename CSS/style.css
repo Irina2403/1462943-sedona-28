@@ -23,7 +23,7 @@ css/
 }
 
  body {
-  *min-width: 960px;*
+  min-width: 960px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -111,6 +111,10 @@ position: absolute;
   font: inherit;
   list-style: none;
 }
+.colomn-1 {
+
+  display: inline;
+}
 .reason-item {
   font: inherit;
   text-align: center;
@@ -132,10 +136,33 @@ position: absolute;
   width: 568px;
   height: 395px;
 }
-.search-form legend {
-  font:inherit;
+
+.call-search-form {
+  text-align: center; 
+  width: 568px;
+  height: 86px;
   background-color: var(--basic-brown); 
+}
+.call-search-form a {
+  font:inherit;
+  width: 319px;
   color: var(--basic-white);
+  font-size: 21px; 
+  font-weight: bold;
+  
+}
+.call-search-form a :hover,
+.call-search-form a :focus {
+  width: 568px;
+  height: 86px;
+  background-color: #604E43;
+   
+   
+}
+
+.call-search-form a:active {
+  background-color: #503E33;
+  
 }
 .date-arrive {
   font: inherit;
@@ -194,9 +221,6 @@ color: var(--basic-blue);
 text-align: right;
 color: var(--basic-background);
 }
-
-
-
 /* СОЦ СЕТИ*/
 .social-list {
   list-style: none;
@@ -226,7 +250,9 @@ background-color: var(--second-blue);
   font: inherit;
   list-style: none;
   background-color: var(--basic-white);
+
 }
+
 
 .sorting {
   font: inherit;
