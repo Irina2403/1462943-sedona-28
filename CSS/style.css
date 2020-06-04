@@ -23,6 +23,7 @@ css/
 }
 
  body {
+   
   min-width: 960px;
   margin: 0;
   padding: 0;
@@ -32,7 +33,7 @@ css/
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-light);
+  background-color: var(--basic-background);
   /*background-image: url("../img/background photo opt.jpg");*/
   background-position: top center;
   background-repeat: no-repeat;
@@ -46,6 +47,23 @@ img {
   max-width: 100%;
   height: auto;
 }
+.page {
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+/*Контейнер для центрирования*/
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 /* main navigation */
 
 .main-navigation {
@@ -53,13 +71,16 @@ img {
   line-height: 26px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+ 
 
 .site-navigation a {
-list-style: none; 
 color: var(--basic-black);
 position: absolute;
+list-style: none;
 }
 
 .site-navigation a:hover,
@@ -68,6 +89,10 @@ position: absolute;
 }
 .site-navigation a:active {
   color: var(--second-blue);
+}
+.site-navigation .container{
+  display: flex;
+  justify-content: space-between;
 }
 
 .main-header-logo {
@@ -88,6 +113,7 @@ position: absolute;
   text-align: center;
   background-image: url("../img/background photo opt.jpg");
   background-position: top center;
+  width: 1200px;
 }
 .attention {
   text-align: center;
@@ -102,19 +128,30 @@ position: absolute;
   font-size: 14px;
   text-align: center;
   line-height: 26 px;
-  background-color: var(--basic-white);
-  
+  background-color: var(--basic-white);  
+}
+.colomn-1 {
+  display: flex; 
+  justify-content: space-between;
+
+   
+}
+.colomn-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0;
+  padding: 0;
 
 }
-
 .reasons-list {
   font: inherit;
   list-style: none;
 }
+/*
 .colomn-1 {
 
   display: inline;
-}
+}*/
 .reason-item {
   font: inherit;
   text-align: center;
@@ -199,18 +236,35 @@ position: absolute;
 .main-footer {
   background-color: var(--basic-white) ;
   color: var(--basic-black);
-  width: 1200px;
-  height: 395px; 
+  padding: 20px 0;
+  margin-top: 23px;
+   
+  /*
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;*/
 }
 .main-footer a{
   color: var(--basic-black);
+  
+}
+.main-footer .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .visit {
 color:inherit;
+text-align: center;
+width: 251 px;
+/*
+outline: 5px solid rgba(255, 251, 0, 0.7);
+outline-offset: -5px; */
 }
 .footer-logo {
 text-align: right;
 color: var(--basic-black);
+/*
+outline: 5px solid rgba(0, 255, 255, 0.7);
+outline-offset: -5px; */
 }
 .footer-logo:hover,
 .footer-logo:focus {
@@ -224,12 +278,18 @@ color: var(--basic-background);
 /* СОЦ СЕТИ*/
 .social-list {
   list-style: none;
-  text-align: center; 
+  text-align: center;
+  justify-self: center;
+  /*
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;*/
+
 }
  .social-button {
    background-color: var(--basic-blue);
    width: 46;
    height: 48;
+   
  }
  
 .social-button  a:hover,
@@ -239,25 +299,47 @@ background-color: var(--first-blue);
 }
 .social-button a:active {
 background-color: var(--second-blue);
-}  
-/* inner.html */
+} 
+
+/* Inner.html */
+.page-body-inner{
+  width: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
 
 .accomodation {
-  font: inherit;
-  background-color: var(--basic-white);
+  font: inherit; 
+  border: none; 
+  height: 217 px;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 600px;
+  background-image: url("../img/background-inner.png");
+  color: var(--basic-white);
 }
 .accomodation-list {
   font: inherit;
-  list-style: none;
+  list-style: none; 
   background-color: var(--basic-white);
-
 }
-
+.amara  {
+  display: grid;
+   grid-template-columns: 1fr 6fr min-content;
+}
+.desert {
+  display: grid;
+   grid-template-columns: 1fr 6fr min-content;
+}
+.villas {
+  display: grid;
+   grid-template-columns: 1fr 6fr min-content;
+}
 
 .sorting {
   font: inherit;
   list-style: none;
-  
 }
 .sorting li:first-child a{
   color: var(--basic-blue);
@@ -272,3 +354,24 @@ background-color: var(--second-blue);
   text-decoration: underline;
   color: var(--basic-black);
 }
+.cost-per-day {
+  font: inherit; 
+  text-align: center; 
+  margin-top: 27px;
+}
+.cost-per-day legend{
+  font-size: 16px; 
+  text-align: none;
+}
+.type-accomodation legend{
+  font-size: 16px; 
+  text-align: right;
+}
+ .search-menu {
+  font: inherit; 
+  background-color: var(--basic-white) ;
+ 
+  display: flex;
+  justify-content: space-between;
+}
+ 

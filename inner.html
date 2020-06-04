@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
@@ -8,7 +8,7 @@
     <link href="normalize.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body-inner">
     <header>
       <nav class="main-navigation">
       <a class="main-header-logo">
@@ -47,7 +47,7 @@
             </ul>
           </fieldset> 
 
-          <fieldset>
+          <fieldset class="type-accomodation">
            <h3>ТИП ЖИЛЬЯ:</h3>
             <ul>
               <li>
@@ -80,42 +80,51 @@
           </fieldset>
         </form> 
       </section>
-      <section>
-        <h1 class="visually-hidden">строка поиска</h1> <!--Заголовок скрыт-->
-       <div class="search menu" >
-         <p>НАЙДЕНО: 3</p>
-         <ul class="sorting">
-           <li><a href="" aria-label="фильтр по цене">ПО ЦЕНЕ</a></li> 
-           <li><a href="" aria-label="фильтр по типу">ПО ТИПУ</a></li>
-           <li><a href="" aria-label="фильтр по рейтингу">ПО РЕЙТИНГУ</a></li> 
-         </ul>
-         <!--СТРЕЛОЧКИ-->
-          <a href="" aria-label="стрелка вверх" tabindex="0">
-           
-           <img src="img/icon-up-dir.svg" width="11" height="10"> </a>
 
-           <a href="" aria-label="стрелка вниз" tabindex="0">
-           
-           <img src="img/icon-down-dir.svg" width="11" height="10"></a>
-         
+      <section class="search-menu">
+        <h1 class="visually-hidden">строка поиска</h1> <!--Заголовок скрыт-->
+       <div >
+         <p>НАЙДЕНО: 3</p>
        </div>
+       <div >
+          <ul class="sorting">
+           <li><a href="" aria-label="фильтр по цене">ПО ЦЕНЕ</a></li>
+           <li> <a href="" aria-label="фильтр по типу">ПО ТИПУ</a> </li>
+            <li><a href="" aria-label="фильтр по рейтингу">ПО РЕЙТИНГУ</a></li> 
+         </ul>
+      </div>
+          
+         <!--СТРЕЛОЧКИ-->
+      <div>
+          <a href="" aria-label="стрелка вверх" tabindex="0">
+          <img src="img/icon-up-dir.svg" width="11" height="10"></a>
+          <a href="" aria-label="стрелка вниз" tabindex="0">
+          <img src="img/icon-down-dir.svg" width="11" height="10"></a>
+      </div>
+         
       </section>
+
       <section>
-        <h2 class="vissually-hidden">Результаты поиска размещения</h2> <!--Заголовок скрыт-->
+        <h2 class="visually-hidden">Результаты поиска размещения</h2> <!--Заголовок скрыт-->
 
        <figure>
-         
+          
          <ul class="accomodation-list"> 
-           
+            
            <li>
              <form action="https://echo.htmlacademy.ru" method="post">
              <fieldset> 
-             <a href=""><h2>AMARA RESORT & SPA</h2></a> 
-             <img src="img/Amara-opt.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
+               <div class="amara">
+               <div>
+             <img src="img/Amara-opt.jpg" width="135" height="90" alt="AMARA RESORT & SPA"> 
+              </div>
+              <div>
+             <a href="" area-label="Ссылка на отель AMARA RESORT & SPA"><h2>AMARA RESORT & SPA</h2></a>  
              <span>Гостиница       от 4000 Р. </span>
-             <button class="more" tabindex="0"><a href="">ПОДРОБНЕЕ</a></button>
-             
+             <button class="more" tabindex="0"><a href="">ПОДРОБНЕЕ</a></button> 
              <button class="reserv" tabindex="0"><a href="">ЗАБРОНИРОВАТЬ</a></button>
+             </div>
+             <div>
               <ul>
                 <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
                 <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
@@ -124,6 +133,9 @@
               </ul>
              
              <p>РЕЙТИНГ: 8,5</p>
+             </div>
+            </div>
+
              </fieldset>
              </form> 
            </li>
@@ -131,37 +143,56 @@
            <li>
             <form action="https://echo.htmlacademy.ru" method="post">
               <fieldset>
-             <a href=""><h2>DESERT QUAIL INN</h2></a>
-             <img src="img/Desert-opt.jpg" width="135" height="90" alt="DESERT QUAIL INN">
+              <div class="desert">
+              <div>
+
+              <img src="img/Desert-opt.jpg" width="135" height="90" alt="DESERT QUAIL INN">
+              </div>
+              <div>
+             <a href="" area-label="Ссылка на отель DESERT QUAIL INN"><h2>DESERT QUAIL INN</h2></a>
+             
              <span>Мотель         от 3000 Р.</span>
              <button class="more" tabindex="0">
              <a href="">ПОДРОБНЕЕ</a></button>
              <button class="more" tabindex="0">
              <a href="">ЗАБРОНИРОВАТЬ</a></button>
+            </div>
+            <div>
               <ul>
                <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
                <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
                <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
               </ul>
              <p>РЕЙТИНГ: 8,9</p>
+            </div>
+            </div>
               </fieldset>  
            </li>
 
            <li>
             <form action="https://echo.htmlacademy.ru" method="post">
               <fieldset>
-             <a href=""><h2>VILLAS AT POCO DIABLO</h2></a>
-             <img src="img/Villas-opt.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+              <div class="villas">
+              <div>
+              <img src="img/Villas-opt.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
+              </div>
+              <div>
+             <a href="" area-label="Ссылка на отель VILLAS AT POCO DIABLO"><h2>VILLAS AT POCO DIABLO</h2></a>
+             
              <span>Апартаменты     от 4000 Р.</span>
              <button class="more" tabindex="0">
              <a href="">ПОДРОБНЕЕ</a></button>
              <button class="more" tabindex="0">
              <a href="">ЗАБРОНИРОВАТЬ</a></button>
+             </div>
+             <div>
               <ul>
                <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
                <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
               </ul>
              <p>РЕЙТИНГ: 9,2</p>
+            </div>
+            </div>
               </fieldset>
              
           </li>
@@ -169,13 +200,15 @@
        </figure>
       </section>
     </main>
+
     <footer class="main-footer">
-      <section>
-        <span class="visit">#VISITSEDONA</span><br>
+      <div class="container">
+      <section class="visit">
+        <span >#VISITSEDONA</span><br>
         <a href="tel:+7(495) 666-02-66" area-label="Телефон">ТЕЛ: +7(495) 666-02-66</a>
       </section>
       <section >
-        <h2 class="visually-hidden">Мы в соцсетях</h2><!--Заголовок скрыт-->
+        <h2 class="visually-hidden">Мы в соцсетях</h2> 
         <ul class="social-list">
         <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter" aria-label="Аккаунт SEDONA в Twitter"></a></li>
         <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook" aria-label="Страница SEDONA в Facebook"></a></li>
@@ -187,7 +220,7 @@
         <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML ACADEMY">
         </a>
       </p>
-        
+    </div>
     </footer>
     
   </body>
