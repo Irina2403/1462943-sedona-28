@@ -6,7 +6,17 @@ css/
 | - style.css
 | - [другие *.css файлы]*/
 
+.visually-hidden { 
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip:rect(0 0 0 0);
+  overflow: hidden;
 
+}
 :root {
   --basic-light: #888888;
   --basic-background:#F2F2F2;
@@ -24,13 +34,13 @@ css/
 
  body {
    
-  min-width: 960px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 700px;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-background);
@@ -60,60 +70,53 @@ img {
 }
 /*Контейнер для центрирования*/
 .container {
-  width: 940px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 10px;
 }
 /* main navigation */
 
 .main-navigation {
-  font-size: 14px;
-  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  
   color: var(--basic-black);
   background-color: var(--basic-white);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
-
-.site-navigation a {
-color: var(--basic-black);
-position: absolute;
-list-style: none;
-}
-
-.site-navigation a:hover,
-.site-navigation a:focus {
-  color: var(--first-blue);
-}
-.site-navigation a:active {
-  color: var(--second-blue);
-}
-.site-navigation .container{
-  display: flex;
-  justify-content: space-between;
-}
 
 .main-header-logo {
   text-align: center; 
-}
-.visually-hidden { 
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip:rect(0 0 0 0);
-  overflow: hidden;
 
+}
+.site-navigation { 
+  width: 1005px;
+
+  font: inherit;
+  text-align: center; 
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 1fr;
+  line-height: 26px;
+  }
+.site-navigation a {
+color: var(--basic-black);
+}
+.site-navigation a:hover,
+.site-navigation a:focus {
+color: var(--first-blue);
+}
+.site-navigation a:active {
+color: var(--second-blue);
 }
 .welcome {
   text-align: center;
   background-image: url("../img/background photo opt.jpg");
   background-position: top center;
   width: 1200px;
+  height: 509px;
 }
 .attention {
   text-align: center;
@@ -133,36 +136,36 @@ list-style: none;
 .colomn-1 {
   display: flex; 
   justify-content: space-between;
-
-   
+}
+.true-city {
+  background-color: var(--basic-blue);
+  width: 400px;
+  text-align: center;
+  color: var(--basic-white);
+  
 }
 .colomn-2 {
+  list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin: 0;
+  margin-top: 60px;
   padding: 0;
-
 }
 .reasons-list {
   font: inherit;
   list-style: none;
 }
-/*
-.colomn-1 {
-
-  display: inline;
-}*/
 .reason-item {
-  font: inherit;
-  text-align: center;
+font: inherit;
+text-align: center;
 }
 .reason-item h3 {
-   font-size: 21px;
-   line-height: 21px;
+font-size: 21px;
+line-height: 21px;
 }
 .best-variant {
-  font:inherit;
-  text-align: center;
+font:inherit;
+text-align: center;
 }
 /*Форма Поиска*/
 .search-form {
@@ -172,16 +175,20 @@ list-style: none;
   box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
   width: 568px;
   height: 395px;
+  margin: auto;
+  /*padding-left: 316 px;*/
 }
 
 .call-search-form {
-  text-align: center; 
+  text-align: center;
+  margin: auto; 
   width: 568px;
   height: 86px;
   background-color: var(--basic-brown); 
 }
 .call-search-form a {
   font:inherit;
+  
   width: 319px;
   color: var(--basic-white);
   font-size: 21px; 
@@ -193,13 +200,10 @@ list-style: none;
   width: 568px;
   height: 86px;
   background-color: #604E43;
-   
-   
 }
 
 .call-search-form a:active {
   background-color: #503E33;
-  
 }
 .date-arrive {
   font: inherit;
@@ -236,8 +240,7 @@ list-style: none;
 .main-footer {
   background-color: var(--basic-white) ;
   color: var(--basic-black);
-  padding: 20px 0;
-  margin-top: 23px;
+ 
    
   /*
   outline: 5px solid rgba(255, 0, 0, 0.7);
@@ -249,22 +252,29 @@ list-style: none;
 }
 .main-footer .container{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns:  2fr 3fr 2fr;
+  column-gap: 110px;
 }
 .visit {
 color:inherit;
 text-align: center;
-width: 251 px;
+margin: 0;
+padding: 23px;
 /*
 outline: 5px solid rgba(255, 251, 0, 0.7);
+outline-offset: -5px; */
+}
+.create-by {
+margin-right: 139px;
+/* 
+outline: 5px solid rgba(0, 255, 255, 0.7);
 outline-offset: -5px; */
 }
 .footer-logo {
 text-align: right;
 color: var(--basic-black);
-/*
-outline: 5px solid rgba(0, 255, 255, 0.7);
-outline-offset: -5px; */
+
+
 }
 .footer-logo:hover,
 .footer-logo:focus {
@@ -276,31 +286,31 @@ text-align: right;
 color: var(--basic-background);
 }
 /* СОЦ СЕТИ*/
+.social {
+  margin: 36px auto;
+}
 .social-list {
   list-style: none;
-  text-align: center;
-  justify-self: center;
+  width: 156px;
+  
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 6px;
   /*
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;*/
-
 }
- .social-button {
-   background-color: var(--basic-blue);
-   width: 46;
-   height: 48;
-   
+.social-button {
+  background-color: var(--basic-blue);
+  padding: 17px 14px 16px 15px;
  }
- 
 .social-button  a:hover,
-.social-button  a:focus,
- {
+.social-button  a:focus,{
 background-color: var(--first-blue);
 }
 .social-button a:active {
 background-color: var(--second-blue);
 } 
-
 /* Inner.html */
 .page-body-inner{
   width: 100%;
@@ -308,12 +318,10 @@ background-color: var(--second-blue);
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
 }
-
 .accomodation {
   font: inherit; 
-  border: none; 
-  height: 217 px;
-  width: 1200px;
+  width: 100%;
+   
   display: grid;
   grid-template-columns: 1fr 1fr 600px;
   background-image: url("../img/background-inner.png");
@@ -321,25 +329,40 @@ background-color: var(--second-blue);
 }
 .accomodation-list {
   font: inherit;
-  list-style: none; 
+  width: 100%;
+  list-style: none;
   background-color: var(--basic-white);
+  padding: 0;
+}
+.menu-ability {
+   list-style: none; 
+}
+.menu-accomodation{
+  list-style: none; 
+}
+.type-accomodation legend{
+  font-size: 16px; 
+  text-align: right;
 }
 .amara  {
   display: grid;
-   grid-template-columns: 1fr 6fr min-content;
+  grid-template-columns: 1fr 6fr 1fr;
+   
 }
 .desert {
   display: grid;
-   grid-template-columns: 1fr 6fr min-content;
+  grid-template-columns: 1fr 6fr 1fr;
 }
 .villas {
   display: grid;
-   grid-template-columns: 1fr 6fr min-content;
+  grid-template-columns: 1fr 6fr 1fr;
 }
-
 .sorting {
   font: inherit;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
+
 }
 .sorting li:first-child a{
   color: var(--basic-blue);
@@ -354,6 +377,17 @@ background-color: var(--second-blue);
   text-decoration: underline;
   color: var(--basic-black);
 }
+
+.search-menu {
+  font: inherit; 
+  background-color: var(--basic-white) ;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;}
+  /*justify-content: space-between;*/
+  
+.search-menu p {
+  padding-left: 73px;
+}
 .cost-per-day {
   font: inherit; 
   text-align: center; 
@@ -363,15 +397,12 @@ background-color: var(--second-blue);
   font-size: 16px; 
   text-align: none;
 }
-.type-accomodation legend{
-  font-size: 16px; 
-  text-align: right;
-}
- .search-menu {
-  font: inherit; 
-  background-color: var(--basic-white) ;
- 
+.stars {
+  list-style: none;
+  text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
- 
+.arrow {
+  padding-right: 73px ;
+}
