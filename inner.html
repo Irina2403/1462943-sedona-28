@@ -8,7 +8,7 @@
 </head>
 
 <body class="page-body-inner">
-  <div class="container">
+  <div class="container inner-grid-wrapper">
     <header>
       <nav class="main-navigation">
         <a class="main-header-logo">
@@ -16,18 +16,10 @@
         </a>
 
         <ul class="site-navigation">
-          <div>
-            <li><a href="information_sedona.html">ИНФОРМАЦИЯ</a></li>
-          </div>
-          <div>
-            <li><a href="fotoandvideo-sedona.html">ФОТО И ВИДЕО</a></li>
-          </div>
-          <div>
-            <li><a href="Mapstate-sedona.html">КАРТА ШТАТА</a></li>
-          </div>
-          <div>
-            <li><a href="inner.html">ГОСТИНИЦЫ</a></li>
-          </div>
+          <li><a href="information_sedona.html"><strong>ИНФОРМАЦИЯ</strong></a></li>
+          <li><a href="fotoandvideo-sedona.html"><strong>ФОТО И ВИДЕО</strong></a></li>
+          <li><a href="Mapstate-sedona.html"><strong>КАРТА ШТАТА</strong></a></li>
+          <li><a href="inner.html"><strong>ГОСТИНИЦЫ</strong></a></li>
         </ul>
       </nav>
 
@@ -74,7 +66,7 @@
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="field-3">
             <div class="cost-per-day">
               <legend>СТОИМОСТЬ В СУТКИ(Р)</legend>
               <input type="text" name="price-low" id="price-low" min="0" placeholder="0"
@@ -93,7 +85,6 @@
 
       <section class="search-menu">
         <h1 class="visually-hidden">строка поиска</h1>
-        <!--Заголовок скрыт-->
         <div>
           <p>НАЙДЕНО: 3</p>
         </div>
@@ -106,7 +97,7 @@
           </ul>
         </div>
         <!--СТРЕЛОЧКИ-->
-        <div class="arrow">
+        <div>
           <a href="" aria-label="стрелка вверх" tabindex="0">
             <img src="img/icon-up-dir.svg" width="11" height="10"></a>
           <a href="" aria-label="стрелка вниз" tabindex="0">
@@ -117,7 +108,6 @@
 
       <section>
         <h2 class="visually-hidden">Результаты поиска размещения</h2>
-        <!--Заголовок скрыт-->
         <ul class="accomodation-list">
           <li>
             <div class="amara">
@@ -134,21 +124,15 @@
               </div>
               <div>
                 <ul class="stars">
-                   
-                    <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
-                   
-                   
-                    <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
-                   
-                   
-                    <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
-                   
-                   
-                    <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
-                   
+                  <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
+                  <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
+                  <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
+                  <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
+
                 </ul>
                 <p>РЕЙТИНГ: 8,5</p>
               </div>
+
             </div>
           </li>
 
@@ -167,15 +151,9 @@
               </div>
               <div>
                 <ul class="stars">
-                  <div>
-                    <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
-                  </div>
-                  <div>
-                    <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
-                  </div>
-                  <div>
-                    <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
-                  </div>
+                  <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
+                  <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
+                  <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
                 </ul>
                 <p>РЕЙТИНГ: 8,9</p>
               </div>
@@ -191,7 +169,6 @@
                 <a href="" area-label="Ссылка на отель VILLAS AT POCO DIABLO">
                   <h2>VILLAS AT POCO DIABLO</h2>
                 </a>
-
                 <span>Апартаменты от 4000 Р.</span><br>
                 <a href="">ПОДРОБНЕЕ</a>
                 <a href="">ЗАБРОНИРОВАТЬ</a>
@@ -210,29 +187,29 @@
     </main>
 
     <footer class="main-footer">
-      <div class="container">
-        <section class="visit">
-          <span>#VISITSEDONA</span><br>
-          <a href="tel:+7(495) 666-02-66" area-label="Телефон">ТЕЛ: +7(495) 666-02-66</a>
-        </section>
-        <section>
-          <h2 class="visually-hidden">Мы в соцсетях</h2>
-          <ul class="social-list">
-            <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter"
-                  aria-label="Аккаунт SEDONA в Twitter"></a></li>
-            <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"
-                  aria-label="Страница SEDONA в Facebook"></a></li>
-            <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"
-                  aria-label="Канал SEDONA в Youtube"></a></li>
-          </ul>
-        </section>
-        <p class="create-by">
-          <img src="img/Website by.png" width="74" height="26">
-          <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" area-label="Ссылка на HTML ACADEMY">
-            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML ACADEMY">
-          </a>
-        </p>
-      </div>
+
+      <section class="visit">
+        <span>#VISITSEDONA</span><br>
+        <a href="tel:+7(495) 666-02-66" area-label="Телефон">ТЕЛ: +7(495) 666-02-66</a>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="social-list">
+          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter"
+                aria-label="Аккаунт SEDONA в Twitter"></a></li>
+          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"
+                aria-label="Страница SEDONA в Facebook"></a></li>
+          <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"
+                aria-label="Канал SEDONA в Youtube"></a></li>
+        </ul>
+      </section>
+      <p class="create-by">
+        <img src="img/Website by.png" width="74" height="26">
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" area-label="Ссылка на HTML ACADEMY">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML ACADEMY">
+        </a>
+      </p>
+
     </footer>
   </div>
 </body>
