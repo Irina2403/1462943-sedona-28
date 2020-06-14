@@ -70,8 +70,6 @@ img {
   width: 1200px;
   margin: 0 auto; 
   padding: 0;
-  
-
 }
 .grid-wrapper {
   display: grid;
@@ -84,40 +82,47 @@ img {
 .main-navigation {
   margin: 0;
   padding: 0;
-  
   color: var(--basic-black);
   background-color: var(--basic-white);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 .main-header-logo {
   text-align: center; 
-
 }
+
 .site-navigation { 
   width: 1005px;
   padding: 0;
   margin: 0;
-
-  font: inherit;
-  text-align: center; 
   list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
+  font: inherit;
+  text-align: center;
   line-height: 26px;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-content:center;
+  align-items: start;
+  /*outline: 5px solid #5f0202;*/
+}
+
+
 .site-navigation a {
   color: var(--basic-black);
+  /*display: block;
+  padding: 10px 30px;
+  outline: 5px solid #ff0000;*/
 }
 .site-navigation a:hover,
 .site-navigation a:focus {
   color: var(--first-blue);
+
 }
 .site-navigation a:active {
   color: var(--second-blue);
 }
+
 .main-main {
   display: grid;
 }
@@ -181,13 +186,6 @@ img {
   list-style: none;
   text-align: center;
 }
-/*
-.reason-item {
-font: inherit;
-}
-*/
-
-
 .reason-item h3 {
 font-size: 21px;
 line-height: 21px;
@@ -197,32 +195,33 @@ font:inherit;
 text-align: center;
 }
 /*Форма Поиска*/
-.search-form {
-  font:inherit;
-  text-align: center;
-  background-color: var(--basic-white);
-  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-  width: 568px;
-  height: 395px;
-  margin: auto;
-  /*padding-left: 316 px;*/
-}
+
 
 .call-search-form {
+  font-style: inherit;
   text-align: center;
+  
   margin: auto; 
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
   width: 568px;
   height: 86px;
-  background-color: var(--basic-brown); 
+  background-color: var(--basic-brown);
+  position: relative; 
+  border: 1px solid white;
 }
 .call-search-form a {
-  font:inherit;
-  
   width: 319px;
+  align-items: center; 
   color: var(--basic-white);
-  font-size: 21px; 
-  font-weight: bold;
+  font:inherit;
+ /*overflow: hidden; 
+ padding-top: 1px;
+ border-top: 1px solid transparent;*/
   
+  
+   
 }
 .call-search-form a :hover,
 .call-search-form a :focus {
@@ -234,24 +233,115 @@ text-align: center;
 .call-search-form a:active {
   background-color: #503E33;
 }
+.search-form {
+  font:inherit;
+  text-align: center;
+  background-color: var(--basic-white);
+  box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  width: 568px;
+  height: 395px;
+  margin: auto;
+  /*padding-left: 316 px;*/
+}
 .date-arrive {
   font: inherit;
+  background-color: var(--basic-white);
+   
+  margin: 25px 0px;
+}
+.date-arrive label {
+font-weight: bold;
+font-size: 14px;
+line-height: 26px;
+}
+.date-arrive input {
+  font: inherit;
   background-color: var(--basic-background);
+  border: 0;
   widows: 346px; 
   height: 38px ;
 }
 .date-depart {
   font: inherit;
-  background-color: var(--basic-background);
+  background-color: var(--basic-white);
   widows: 346px; 
   height: 38px ;
-  border-color: var(--basic-background);
+  margin: 29px  0px;
 }
+.date-depart input {
+  font: inherit;
+  background-color: var(--basic-background);
+  border: 0;
+  widows: 346px; 
+  height: 38px ;
+}
+.date-depart label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  }
+
+.people {
+  
+   display: flex; 
+  justify-content: center;
+   
+}
+.people button{ 
+  width: 38px;
+  height: 26px;
+  
+}
+
+.adult-quantity {
+   
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  
+}
+.adult-quantity input{ 
+  text-align: center;
+  width: 38px;
+  height: 26px; 
+}
+.child-quantity {
+   
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 26px;
+  
+}
+.child-quantity input{ 
+  text-align: center;
+  width: 38px;
+  height: 26px; 
+}
+
+
 .find {
+  margin: 20px;
   font:inherit;
   background-color: var(--basic-blue);
-  color: var(--basic-white);
+  padding: 16px 182px;
+  border: 0px;
 }
+.find button {
+  background-color: var(--basic-blue);
+  color: var(--basic-white);
+  width: 95px;
+  height: 26px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  border: 0;
+}
+
+
+
+
+
+
 .map-sidona {
   text-align: center;
 }
