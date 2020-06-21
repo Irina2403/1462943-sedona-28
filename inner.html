@@ -28,7 +28,7 @@
     <main>
       <section>
         <form class="accomodation" action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+          <fieldset class="type-ability">
             <h3>ИНФРАСТРУКТУРА:</h3>
             <ul class="menu-ability">
               <li>
@@ -69,14 +69,26 @@
           <fieldset class="field-3">
             <div class="cost-per-day">
               <legend>СТОИМОСТЬ В СУТКИ(Р)</legend>
-              <input type="text" name="price-low" id="price-low" min="0" placeholder="0"
-                aria-label="Минимальная стоимость в сутки">
-              <input type="text" name="price-high" id="price-hight" max="3000" placeholder="3000"
-                aria-label="Максимальная стоимость в сутки">
-              <div class="circle-1" area-label="значение минимальной стоимости проживания"></div>
-              <div class="straight"></div>
-              <div class="circle-2" area-label="значение максимальной стоимости проживания"></div>
-
+<div class="price-controls"> 
+  <label class="min-price">  
+             <input type="number" name="price-low" id="price-low" min="0"  
+                aria-label="Минимальная стоимость в сутки" placeholder="ОТ 0"></label>
+  <label class="max-price">  
+              <input type="number" name="price-high" id="price-hight" max="3000"  
+                aria-label="Максимальная стоимость в сутки" placeholder="ДО 3000" > </label> 
+</div>
+<div class="range-controls">
+  <div class="scale-white-line">
+    <div class="bar-blue-line" style="width: 78%; margin-left: 0%"
+    ></div>
+  </div>
+  <!--<div class="bar" style="width: 0%; margin-left: 22%"></div>-->
+              <div class="toggle circle-min" area-label="значение минимальной стоимости проживания"
+               tabindex="0" style=""></div>
+              
+              <div class="toggle circle-max" area-label="значение максимальной стоимости проживания" 
+              tabindex="0" style="left: 75%"></div>
+</div>
               <button type="submit" area-label="Показать результаты">ПОКАЗАТЬ</button>
             </div>
           </fieldset>
@@ -97,11 +109,14 @@
           </ul>
         </div>
         <!--СТРЕЛОЧКИ-->
-        <div>
-          <a href="" aria-label="стрелка вверх" tabindex="0">
-            <img src="img/icon-up-dir.svg" width="11" height="10"></a>
-          <a href="" aria-label="стрелка вниз" tabindex="0">
-            <img src="img/icon-down-dir.svg" width="11" height="10"></a>
+        <div >
+          <a class="arrow" href="" aria-label="стрелка вверх" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#231F20" d="M5.5 0L0 10h11z"/></svg></a>
+          <a class="arrow" href="" aria-label="стрелка вниз" tabindex="0"> 
+            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+              </svg></a>
         </div>
 
       </section>
@@ -195,11 +210,11 @@
       <section>
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social-list">
-          <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter"
+          <li><a class="social-button-1" href="#"><img src="img/twitter.svg" width="17" height="17" alt="twitter"
                 aria-label="Аккаунт SEDONA в Twitter"></a></li>
-          <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"
+          <li><a class="social-button-2" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Facebook"
                 aria-label="Страница SEDONA в Facebook"></a></li>
-          <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"
+          <li><a class="social-button-3" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"
                 aria-label="Канал SEDONA в Youtube"></a></li>
         </ul>
       </section>
