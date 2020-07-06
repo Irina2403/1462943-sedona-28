@@ -16,10 +16,10 @@
         </a>
 
         <ul class="site-navigation">
-          <li><a href="information_sedona.html"><strong>ИНФОРМАЦИЯ</strong></a></li>
-          <li><a href="fotoandvideo-sedona.html"><strong>ФОТО И ВИДЕО</strong></a></li>
-          <li><a href="Mapstate-sedona.html"><strong>КАРТА ШТАТА</strong></a></li>
-          <li><a href="inner.html"><strong>ГОСТИНИЦЫ</strong></a></li>
+          <li><a href="information_sedona.html">ИНФОРМАЦИЯ</a></li>
+          <li><a href="fotoandvideo-sedona.html">ФОТО И ВИДЕО</a></li>
+          <li><a href="Mapstate-sedona.html">КАРТА ШТАТА</a></li>
+          <li><a href="inner.html">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
 
@@ -32,15 +32,15 @@
             <h3>ИНФРАСТРУКТУРА:</h3>
             <ul class="menu-ability">
               <li>
-                <input type="checkbox" name="pool" id="ability-pool" checked>
+                <input class="visually-hidden"  type="checkbox" name="pool" id="ability-pool" checked>
                 <label for="ability-pool">БАССЕЙН</label>
               </li>
               <li>
-                <input type="checkbox" name="parking" id="ability-parking">
+                <input class="visually-hidden"  type="checkbox" name="parking" id="ability-parking">
                 <label for="ability-parking">ПАРКОВКА </label>
               </li>
               <li>
-                <input type="checkbox" name="wifi" id="ability-wifi">
+                <input class="visually-hidden"  type="checkbox" name="wifi" id="ability-wifi">
                 <label for="ability-wifi">WI-FI</label>
 
               </li>
@@ -51,16 +51,16 @@
             <h3>ТИП ЖИЛЬЯ:</h3>
             <ul class="menu-accomodation">
               <li>
-                <input type="checkbox" name="hotel" id="accomodation-hotel" checked>
+                <input class="visually-hidden"  type="checkbox" name="hotel" id="accomodation-hotel" checked>
                 <label for="accomodation-hotel">ГОСТИНИЦА</label>
 
               </li>
               <li>
-                <input type="checkbox" name="motel" id="accomodation-motel" checked>
+                <input class="visually-hidden" type="checkbox" name="motel" id="accomodation-motel"  checked>
                 <label for="accomodation-motel">МОТЕЛЬ</label>
               </li>
               <li>
-                <input type="checkbox" name="apartments" id="accomodation-apartments" checked>
+                <input class="visually-hidden" type="checkbox" name="apartments" id="accomodation-apartments"  checked readonly>
                 <label for="accomodation-apartments">АПАРТАМЕНТЫ</label>
               </li>
             </ul>
@@ -69,13 +69,16 @@
           <fieldset class="field-3">
             <div class="cost-per-day">
               <legend>СТОИМОСТЬ В СУТКИ(Р)</legend>
-<div class="price-controls"> 
+               <div class="line"></div>  
+<div class="price-controls">
+
   <label class="min-price">  
              <input type="number" name="price-low" id="price-low" min="0"  
                 aria-label="Минимальная стоимость в сутки" placeholder="ОТ 0"></label>
+                
   <label class="max-price">  
               <input type="number" name="price-high" id="price-hight" max="3000"  
-                aria-label="Максимальная стоимость в сутки" placeholder="ДО 3000" > </label> 
+                aria-label="Максимальная стоимость в сутки" placeholder="ДО 3000"> </label> 
 </div>
 <div class="range-controls">
   <div class="scale-white-line">
