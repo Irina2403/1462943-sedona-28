@@ -203,8 +203,9 @@ img {
 .true-city h3 {
   margin: 0;
   text-align: center;
+  margin-top: 50px;
   padding-left: 130px;
-  padding-top: 33px;
+  /*padding-top: 33px;*/
   padding-bottom: 10px;
   font:inherit;
   font-weight: bold;
@@ -258,13 +259,23 @@ img {
   align-items: center;
   padding-left: 10px; 
 } 
-.colomn-4 .reason-item:first-child h3 {
-  padding-left: 15px;
-  padding-bottom: 0px;
+.colomn-4 .reason-item:first-child {
+  margin-bottom: 13px;
 }
+.colomn-4 .reason-item:nth-child(2) {
+  margin-bottom: 15px;
+}
+.colomn-4 .reason-item:nth-child(3) {
+  margin-bottom: 10px;
+}
+.colomn-4 .reason-item:first-child h3 {
+  padding-left: 15px; 
+} 
 .colomn-4 .reason-item:nth-child(2) h3 {
   padding-left: 25px; 
-  padding-bottom: 0px;
+} 
+.colomn-4 .reason-item:nth-child(2) p {
+  padding-left: 15px;  
 } 
 .reasons-list {
   margin: 0;
