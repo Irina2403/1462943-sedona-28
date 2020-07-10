@@ -1,30 +1,25 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
-
+<html class="page" lang="ru"> 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.css">
-</head>
-
+</head> 
 <body class="page-body-inner">
   <div class="container inner-grid-wrapper">
     <header>
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
           <img src="img/logo.png" width="138" height="70" alt="Логотип SEDONA" aria-label="логотип Седона">
-        </a>
-
+        </a> 
         <ul class="site-navigation">
           <li><a href="information_sedona.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="fotoandvideo-sedona.html">ФОТО И ВИДЕО</a></li>
           <li><a href="Mapstate-sedona.html">КАРТА ШТАТА</a></li>
           <li><a href="inner.html">ГОСТИНИЦЫ</a></li>
         </ul>
-      </nav>
-
-    </header>
-
+      </nav> 
+    </header> 
     <main>
       <section>
         <form class="accomodation" action="https://echo.htmlacademy.ru" method="get">
@@ -41,19 +36,16 @@
               </li>
               <li>
                 <input class="visually-hidden" type="checkbox" name="wifi" id="ability-wifi">
-                <label for="ability-wifi">WI-FI</label>
-
+                <label for="ability-wifi">WI-FI</label> 
               </li>
             </ul>
-          </fieldset>
-
+          </fieldset> 
           <fieldset class="type-accomodation">
             <h3>ТИП ЖИЛЬЯ:</h3>
             <ul class="menu-accomodation">
               <li>
                 <input class="visually-hidden" type="checkbox" name="hotel" id="accomodation-hotel" checked>
-                <label for="accomodation-hotel">ГОСТИНИЦА</label>
-
+                <label for="accomodation-hotel">ГОСТИНИЦА</label> 
               </li>
               <li>
                 <input class="visually-hidden" type="checkbox" name="motel" id="accomodation-motel" checked>
@@ -65,18 +57,15 @@
                 <label for="accomodation-apartments">АПАРТАМЕНТЫ</label>
               </li>
             </ul>
-          </fieldset>
-
+          </fieldset> 
           <fieldset class="field-3">
             <div class="cost-per-day">
               <legend>СТОИМОСТЬ В СУТКИ(Р)</legend>
               <div class="line"></div>
-              <div class="price-controls">
-
+              <div class="price-controls"> 
                 <label class="min-price">
                   <input type="number" name="price-low" id="price-low" min="0"
-                    aria-label="Минимальная стоимость в сутки" placeholder="ОТ 0"></label>
-
+                    aria-label="Минимальная стоимость в сутки" placeholder="ОТ 0"></label> 
                 <label class="max-price">
                   <input type="number" name="price-high" id="price-hight" max="3000"
                     aria-label="Максимальная стоимость в сутки" placeholder="ДО 3000"> </label>
@@ -84,20 +73,17 @@
               <div class="range-controls">
                 <div class="scale-white-line">
                   <div class="bar-blue-line" style="width: 79%; margin-left: 0%"></div>
-                </div>
-
-                <div class="toggle circle-min" area-label="значение минимальной стоимости проживания" tabindex="0"
-                  style=""></div>
-
-                <div class="toggle circle-max" area-label="значение максимальной стоимости проживания" tabindex="0"
+                </div> 
+                <div class="toggle circle-min" aria-label="значение минимальной стоимости проживания" tabindex="0"
+                  style=""></div> 
+                <div class="toggle circle-max" aria-label="значение максимальной стоимости проживания" tabindex="0"
                   style="left: 78%"></div>
               </div>
-              <button type="submit" area-label="Показать результаты">ПОКАЗАТЬ</button>
+              <button type="submit" aria-label="Показать результаты">ПОКАЗАТЬ</button>
             </div>
           </fieldset>
         </form>
-      </section>
-
+      </section> 
       <section class="search-menu">
         <h1 class="visually-hidden">строка поиска</h1>
         <div>
@@ -111,7 +97,6 @@
             <li><a href="" aria-label="фильтр по рейтингу">ПО РЕЙТИНГУ</a></li>
           </ul>
         </div>
-        <!--СТРЕЛОЧКИ-->
         <div>
           <a class="arrow" href="" aria-label="стрелка вверх" tabindex="0">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
@@ -120,10 +105,8 @@
             <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0H11" />
             </svg></a>
-        </div>
-
-      </section>
-
+        </div> 
+      </section> 
       <section>
         <h2 class="visually-hidden">Результаты поиска размещения</h2>
         <ul class="accomodation-list">
@@ -133,14 +116,12 @@
                 <img src="img/amara-opt.jpg" width="135" height="90" alt="AMARA RESORT & SPA">
               </div>
               <div>
-                <a href="" area-label="Ссылка на отель AMARA RESORT & SPA">
+                <a href="" aria-label="Ссылка на отель AMARA RESORT & SPA">
                   <h2>AMARA RESORT & SPA</h2>
-                </a>
-
+                </a> 
                 <pre>Гостиница          от 4000 Р. </pre>
                 <a class="blue" href="">ПОДРОБНЕЕ</a>
-                <a class="brown" href="">ЗАБРОНИРОВАТЬ</a>
-
+                <a class="brown" href="">ЗАБРОНИРОВАТЬ</a> 
               </div>
               <div>
                 <ul class="stars">
@@ -148,21 +129,18 @@
                   <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
                   <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
                   <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
-
                 </ul>
                 <p>РЕЙТИНГ: 8,5</p>
-              </div>
-
+              </div> 
             </div>
-          </li>
-
+          </li> 
           <li>
             <div class="desert">
               <div>
                 <img src="img/desert-opt.jpg" width="135" height="90" alt="DESERT QUAIL INN">
               </div>
               <div>
-                <a href="" area-label="Ссылка на отель DESERT QUAIL INN">
+                <a href="" aria-label="Ссылка на отель DESERT QUAIL INN">
                   <h2>DESERT QUAIL INN</h2>
                 </a>
                 <pre>Мотель                 от 3000 Р.</pre>
@@ -178,15 +156,14 @@
                 <p>РЕЙТИНГ: 8,9</p>
               </div>
             </div>
-          </li>
-
+          </li> 
           <li>
             <div class="villas">
               <div>
                 <img src="img/villas-opt.jpg" width="135" height="90" alt="VILLAS AT POCO DIABLO">
               </div>
               <div>
-                <a href="" area-label="Ссылка на отель VILLAS AT POCO DIABLO">
+                <a href="" aria-label="Ссылка на отель VILLAS AT POCO DIABLO">
                   <h2>VILLAS AT POCO DIABLO</h2>
                 </a>
                 <pre>Апартаменты      от 2000 Р.</pre>
@@ -204,10 +181,8 @@
           </li>
         </ul>
       </section>
-    </main>
-
-    <footer class="main-footer-1">
-
+    </main> 
+    <footer class="main-footer-1"> 
       <section class="visit">
         <span>#VISITSEDONA</span><br>
         <a href="tel:+7(495) 666-02-66" area-label="Телефон">ТЕЛ: +7(495) 666-02-66</a>
@@ -215,29 +190,29 @@
       <section class="social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="social-list">
-          <li><a class="social-button-1" href="#"><svg width="17" height="17" viewBox="0 0 17 17"
-                xmlns="http://www.w3.org/2000/svg">
+          <li><a class="social-button-1" href="#" aria-label="Twitter-аккаунт сайта"><svg width="17" height="17"
+                viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249
              2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" />
               </svg>
             </a></li>
-          <li><a class="social-button-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="22"
-                viewBox="0 0 12 22">
+          <li><a class="social-button-2" href="#" aria-label="Facebook-аккаунт сайта"><svg
+                xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
                 <path d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" /></svg>
             </a></li>
-          <li><a class="social-button-3" href="#"><svg xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+          <li><a class="social-button-3" href="#" aria-label="YouTube-аккаунт сайта"><svg
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16"
+                viewBox="0 0 20 16">
                 <path
                   d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
-                </svg>
-
+              </svg> 
             </a></li>
         </ul>
       </section>
       <p class="create-by">
-        <img src="img/website by.png" width="74" height="26">
-        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" area-label="Ссылка на HTML ACADEMY">
+        <img src="img/website by.png" width="74" height="26" alt="Сделано HTML ACADEMY">
+        <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт HTML ACADEMY">
           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
             <title>logo-htmlacademy-small1</title>
             <path
@@ -245,10 +220,8 @@
               transform="translate(0 -0.02)" />
           </svg>
         </a>
-      </p>
-
+      </p> 
     </footer>
   </div>
-</body>
-
+</body> 
 </html>
