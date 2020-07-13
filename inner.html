@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html class="page" lang="ru"> 
+<html class="page" lang="ru">
+
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="stylesheet" href="./css/style.min.css">
-</head> 
+  <title>HTML Academy: Седона</title>  
+  <link rel="stylesheet" href="./css/styles-min.css">  
+</head>
+
 <body class="page-body-inner">
   <div class="container inner-grid-wrapper">
     <header>
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
           <img src="img/logo.png" width="138" height="70" alt="Логотип SEDONA" aria-label="логотип Седона">
-        </a> 
+        </a>
         <ul class="site-navigation">
           <li><a href="information_sedona.html">ИНФОРМАЦИЯ</a></li>
           <li><a href="fotoandvideo-sedona.html">ФОТО И ВИДЕО</a></li>
           <li><a href="Mapstate-sedona.html">КАРТА ШТАТА</a></li>
-          <li><a href="inner.html">ГОСТИНИЦЫ</a></li>
+          <li class="active-link"><a href="inner.html">ГОСТИНИЦЫ</a></li>
         </ul>
-      </nav> 
-    </header> 
+      </nav>
+    </header>
     <main>
       <section>
+        <h1 class="visually-hidden">Your accomodation in SEDONA</h1>
         <form class="accomodation" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="type-ability">
             <h3>ИНФРАСТРУКТУРА:</h3>
@@ -37,16 +39,16 @@
               </li>
               <li>
                 <input class="visually-hidden" type="checkbox" name="wifi" id="ability-wifi">
-                <label for="ability-wifi">WI-FI</label> 
+                <label for="ability-wifi">WI-FI</label>
               </li>
             </ul>
-          </fieldset> 
+          </fieldset>
           <fieldset class="type-accomodation">
             <h3>ТИП ЖИЛЬЯ:</h3>
             <ul class="menu-accomodation">
               <li>
                 <input class="visually-hidden" type="checkbox" name="hotel" id="accomodation-hotel" checked>
-                <label for="accomodation-hotel">ГОСТИНИЦА</label> 
+                <label for="accomodation-hotel">ГОСТИНИЦА</label>
               </li>
               <li>
                 <input class="visually-hidden" type="checkbox" name="motel" id="accomodation-motel" checked>
@@ -58,15 +60,15 @@
                 <label for="accomodation-apartments">АПАРТАМЕНТЫ</label>
               </li>
             </ul>
-          </fieldset> 
+          </fieldset>
           <fieldset class="field-3">
+            <legend>СТОИМОСТЬ В СУТКИ(Р)</legend>
             <div class="cost-per-day">
-              <legend>СТОИМОСТЬ В СУТКИ(Р)</legend>
               <div class="line"></div>
-              <div class="price-controls"> 
+              <div class="price-controls">
                 <label class="min-price">
                   <input type="number" name="price-low" id="price-low" min="0"
-                    aria-label="Минимальная стоимость в сутки" placeholder="ОТ 0"></label> 
+                    aria-label="Минимальная стоимость в сутки" placeholder="ОТ 0"></label>
                 <label class="max-price">
                   <input type="number" name="price-high" id="price-hight" max="3000"
                     aria-label="Максимальная стоимость в сутки" placeholder="ДО 3000"> </label>
@@ -74,9 +76,9 @@
               <div class="range-controls">
                 <div class="scale-white-line">
                   <div class="bar-blue-line" style="width: 79%; margin-left: 0%"></div>
-                </div> 
+                </div>
                 <div class="toggle circle-min" aria-label="значение минимальной стоимости проживания" tabindex="0"
-                  style=""></div> 
+                  style=""></div>
                 <div class="toggle circle-max" aria-label="значение максимальной стоимости проживания" tabindex="0"
                   style="left: 78%"></div>
               </div>
@@ -84,30 +86,30 @@
             </div>
           </fieldset>
         </form>
-      </section> 
+      </section>
       <section class="search-menu">
-        <h1 class="visually-hidden">строка поиска</h1>
+        <h2 class="visually-hidden">строка поиска</h2>
         <div>
           <p>НАЙДЕНО: 3</p>
         </div>
+        <h4>СОРТИРОВКА:</h4>
         <div>
-          <ul class="sorting">
-            <li>СОРТИРОВКА:</li>
-            <li><a href="" aria-label="фильтр по цене">ПО ЦЕНЕ</a></li>
+          <ul class="sorting-new">
+            <li class="active-element"><a href="" aria-label="фильтр по цене">ПО ЦЕНЕ</a></li>
             <li> <a href="" aria-label="фильтр по типу">ПО ТИПУ</a> </li>
             <li><a href="" aria-label="фильтр по рейтингу">ПО РЕЙТИНГУ</a></li>
-          </ul>
+          </ul> 
         </div>
         <div>
           <a class="arrow" href="" aria-label="стрелка вверх" tabindex="0">
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
               <path d="M5.5 0L0 10h11z" /></svg></a>
-          <a class="arrow" href="" aria-label="стрелка вниз" tabindex="0">
+          <a class="arrow arrow-active" href="" aria-label="стрелка вниз" tabindex="0">
             <svg width="11" height="10" viewBox="0 0 11 10" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 10L0 0H11" />
             </svg></a>
-        </div> 
-      </section> 
+        </div>
+      </section>
       <section>
         <h2 class="visually-hidden">Результаты поиска размещения</h2>
         <ul class="accomodation-list">
@@ -119,10 +121,10 @@
               <div>
                 <a href="" aria-label="Ссылка на отель AMARA RESORT & SPA">
                   <h2>AMARA RESORT & SPA</h2>
-                </a> 
+                </a>
                 <pre>Гостиница          от 4000 Р. </pre>
                 <a class="blue" href="">ПОДРОБНЕЕ</a>
-                <a class="brown" href="">ЗАБРОНИРОВАТЬ</a> 
+                <a class="brown" href="">ЗАБРОНИРОВАТЬ</a>
               </div>
               <div>
                 <ul class="stars">
@@ -132,9 +134,9 @@
                   <li><img src="img/star.svg" width="19" height="17" alt="здездочка"></li>
                 </ul>
                 <p>РЕЙТИНГ: 8,5</p>
-              </div> 
+              </div>
             </div>
-          </li> 
+          </li>
           <li>
             <div class="desert">
               <div>
@@ -157,7 +159,7 @@
                 <p>РЕЙТИНГ: 8,9</p>
               </div>
             </div>
-          </li> 
+          </li>
           <li>
             <div class="villas">
               <div>
@@ -182,11 +184,14 @@
           </li>
         </ul>
       </section>
-    </main> 
-    <footer class="main-footer-1"> 
+    </main>
+    <footer class="main-footer-1">
       <section class="visit">
-        <span>#VISITSEDONA</span><br>
-        <a href="tel:+7(495) 666-02-66" aria-label="Телефон">ТЕЛ: +7(495) 666-02-66</a>
+        <h3 class="visually-hidden">contact-of-Sidona</h3>
+        <div class="ht">#VISITSEDONA</div>
+        <div>
+          <span>ТЕЛ:</span> <a href="tel:+7(495)666-02-66" aria-label="Телефон">+7(495) 666-02-66</a>
+        </div>
       </section>
       <section class="social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
@@ -207,12 +212,13 @@
                 viewBox="0 0 20 16">
                 <path
                   d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z" />
-              </svg> 
+              </svg>
             </a></li>
         </ul>
       </section>
-      <p class="create-by">
-        <img src="img/website-by.png" width="74" height="26" alt="Сделано HTML ACADEMY">
+      <section class="create-by">
+        <h3 class="visually-hidden">HTML-ACADEMY-SITE</h3>
+        <p>WEBSITE BY</p>
         <a class="footer-logo" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Сайт HTML ACADEMY">
           <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108.08 36.85">
             <title>logo-htmlacademy-small1</title>
@@ -221,8 +227,9 @@
               transform="translate(0 -0.02)" />
           </svg>
         </a>
-      </p> 
+      </section>
     </footer>
   </div>
-</body> 
+</body>
+
 </html>
