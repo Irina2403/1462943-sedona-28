@@ -157,7 +157,7 @@ img {
   padding-top: 76px; 
   box-sizing: border-box;
   background-color: var(--basic-brown);
-  background-image: url("../img/background\ photo\ opt.jpg");
+  background-image: url("../img/background-photo-opt.jpg");
   background-position: top center;
   width: 1200px;
   height: 508px;
@@ -554,8 +554,8 @@ img {
 .adult-quantity button { 
   border: 0; 
   background-color:var(--basic-background); 
-  outline: none !important;
-  box-shadow: none !important; 
+  outline: none;
+  box-shadow: none; 
 }
 .adult-quantity  svg.plus {
   transform: rotate(90deg);
@@ -571,16 +571,16 @@ img {
   fill: var(--basic-black);
   background-color:var(--basic-background);
   border: 0;  
-  outline: none !important;
-  box-shadow: none !important;
+  outline: none;
+  box-shadow: none;
 }
 
 .adult-quantity:active svg {
   fill: var(--basic-blue);
   background-color:var(--basic-background); 
   border: 0;
-  outline: none !important;
-  box-shadow: none !important; 
+  outline: none;
+  box-shadow: none; 
 }  
 .child-quantity {
   background-color: var(--basic-background);
@@ -606,8 +606,8 @@ img {
 .child-quantity button { 
   border: 0; 
   background-color: var(--basic-background);
-  outline: none !important;
-  box-shadow: none !important; 
+  outline: none;
+  box-shadow: none; 
 } 
 .child-quantity  svg.plus {
   transform: rotate(90deg);
@@ -647,8 +647,8 @@ img {
   text-align: center;
   align-items: center; 
   margin-bottom: 55px;
-  outline: none !important;
-  box-shadow: none !important; 
+  outline: none;
+  box-shadow: none; 
 }  
 .find-button:hover {
   background-color: var(--first-blue);
@@ -866,7 +866,7 @@ img {
   top: 9px;
   width: 27px;
   height: 27px; 
-  background-image: url("../img/checkbox-on\ disable.svg");
+  background-image: url("../img/checkbox-on-disable.svg");
   background-repeat: no-repeat;  
 } 
 .menu-ability input:checked:disabled+label {
@@ -928,7 +928,7 @@ img {
   top: 9px;
   width: 27px;
   height: 27px; 
-  background-image: url("../img/checkbox-on\ disable.svg"); 
+  background-image: url("../img/checkbox-on-disable.svg"); 
   background-repeat: no-repeat; 
 } 
 .menu-accomodation input:checked:disabled+label {
